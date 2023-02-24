@@ -30,6 +30,12 @@ def main():
   except ValueError:
     print("Anything except numbers are prohibited")
 
+
 # Application Start
 if __name__ == "__main__":
-  main()
+  while True:
+    try:
+      main()
+    except KeyboardInterrupt:
+      print("Goodbye!")
+      exit(1)
