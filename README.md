@@ -3,6 +3,10 @@
 
 [Replit](https://replit.com/@aljm/FizzBuzz)
 
+### Requirements
+- Colorama
+
+
 ## Main Aim
 The main aim of this challenge is learning basic algorithm that machine can process
 
