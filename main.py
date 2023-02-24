@@ -15,17 +15,20 @@ def IsBuzz(number: int) -> bool:
 # Main function
 def main():
   # Ask user for the number should we start
-  num = int(input("Please enter your starting number: "))
-  if num > 0:
-    for i in range(1, num + 1):
-      if IsFizz(i) and IsBuzz(i):
-        print("FizzBuzz")
-      elif IsFizz(i):
-        print("Fizz")
-      elif IsBuzz(i):
-        print("Buzz")
-      else:
-        print(i)
+  try:
+    num = int(input("Please enter your starting number: "))
+    if num > 0:
+      for i in range(1, num + 1):
+        if IsFizz(i) and IsBuzz(i):
+          print("FizzBuzz")
+        elif IsFizz(i):
+          print("Fizz")
+        elif IsBuzz(i):
+          print("Buzz")
+        else:
+          print(i)
+  except ValueError:
+    print("Anything except numbers are prohibited")
 
 # Application Start
 if __name__ == "__main__":
